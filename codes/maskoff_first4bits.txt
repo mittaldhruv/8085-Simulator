@@ -1,0 +1,9 @@
+# BEGIN 0000H
+
+	   LDA C050
+	   ANI 0F
+	   STA C051
+	   HLT
+
+# ORG C050
+# DB 96H

@@ -1,0 +1,11 @@
+# BEGIN 0000H
+
+	   LXI H,C050
+	   MOV A, M
+	   INX H
+	   SUB M
+	   STA C052
+	   HLT
+
+# ORG C050
+# DB 99H,48H

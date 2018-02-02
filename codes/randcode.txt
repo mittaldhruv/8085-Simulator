@@ -1,0 +1,23 @@
+# BEGIN 0000H
+
+	   LDA C051
+	   MVI M, 40
+	   STAX B
+	   LDAX B
+	   LHLD C051
+	   LXI B,C053
+	   MVI H,C0
+	   MVI L,54
+	   MOV M,H
+	   MOV B,A
+	   LDA C050
+	   ADD B
+	   STA C056
+	   INR A
+	   INR M
+	   INX H
+	   INX SP
+	   HLT
+
+# ORG C050
+# DB 11H,22H,33H,44H,55H

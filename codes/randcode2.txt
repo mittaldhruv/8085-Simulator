@@ -1,0 +1,19 @@
+# ORG 2000H
+# BEGIN 2000H
+
+        LDA 2503
+        STA 2504
+        MVI D, 30
+        MOV M, A
+        DAD D
+        ADC M
+        SHLD 2505
+        SPHL
+        XCHG
+        PUSH H
+        PUSH B
+        POP PSW
+        HLT
+
+# ORG 2501H
+# DB 84H,00H,56H
