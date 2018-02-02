@@ -14,7 +14,7 @@
 using namespace std;
 
 #define delaytime 10
-const char *filename = "D:\\Edu\\Projects - Sem 3\\COA Project\\codes\\randcode1.txt";
+const char *filename = "<current directory>\\codes\\randcode1.txt";
 
 /*
         filenames = {   add_8bit    sub_8bit    1s_comp_8bit    2s_comp_8bit    maskoff_last4bits    maskoff_first4bits
