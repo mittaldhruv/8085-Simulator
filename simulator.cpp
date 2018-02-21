@@ -52,18 +52,20 @@ vector<bool > write;
 
 char hexa_deci[] = { '0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F' };
 
-int change_char( char X )
+int change_char( char X )	// Character to intiger
 {
     for(int i=0;i<=15;i++)
         if( hexa_deci[i] == X )
             return i;
 }
-char change_int( int X )
+char change_int( int X )	// Intiger to character
 {
     for(int i=0;i<=15;i++)
         if( i == X )
             return hexa_deci[i];
 }
+
+	// Supporting function or hexadecimal to binary conversion 
 
 string nextHex(string s, int changecharidx = 1){
     if( changecharidx <= s.size() ){
@@ -159,6 +161,8 @@ string subhexa(string a, string b, int changecharidx = 1){
     }
     return a;
 }
+
+	// Supporting functions to draw timing diagram of Instructions Implemented
 
 void draw_polygon(int x1, int y1, int length, int thickness = 20){
     int slantgap = 10;
